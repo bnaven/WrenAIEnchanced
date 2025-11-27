@@ -80,6 +80,7 @@ In the WrenAI/docker folder, you can find the .env.example file. You can copy th
 # assume current directory is wren-ui
 cd ../docker
 cp .env.example .env.local
+# make sure you update the Url for WrebnUI endpoint if WrenUI is being run locally. You will find it in .evn.local and config.yml files
 ```
 Step 2. Modify your .env.local file
 You need to fill the `OPENAI_API_KEY` with your OPENAI api key before starting.
@@ -91,6 +92,7 @@ Step 3. Start the services via docker-compose
 ```bash
 # current directory is WrenAI/docker
 docker-compose -f docker-compose-dev.yaml --env-file .env.example up
+
 
 # you can add a -d flag to run the services in the background
 docker-compose -f docker-compose-dev.yaml --env-file .env.example up -d
