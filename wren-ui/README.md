@@ -80,6 +80,7 @@ In the WrenAI/docker folder, you can find the .env.example file. You can copy th
 # assume current directory is wren-ui
 cd ../docker
 cp .env.example .env.local
+cp config.example.yaml config.local.yaml
 # make sure you update the Url for WrebnUI endpoint if WrenUI is being run locally. You will find it in .evn.local and config.yml files
 ```
 Step 2. Modify your .env.local file
