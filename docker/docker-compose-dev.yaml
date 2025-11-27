@@ -48,7 +48,7 @@ services:
     env_file:
       - ${PROJECT_DIR}/.env
     volumes:
-      - ${PROJECT_DIR}/config.yaml:/app/config.yaml:ro
+      - ${PROJECT_DIR}/config.local.yaml:/app/config.yaml:ro
       - ${PROJECT_DIR}/data:/app/data:ro
     networks:
       - wren
